@@ -265,8 +265,7 @@ nav ul li a:hover{}
     top: 0;
     left: 0;
     bottom: 0;
-}
-.godown{
+}.godown{
     position: absolute;
     bottom: 50px;
     left: 50%;
@@ -410,27 +409,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2b2f85', e
     opacity: 1;
 }
 .whatwedo-content a{
+    font-size: 24px;
     position: absolute;
     bottom: 50px;
     left: 50%;
     color: #fff;
     z-index: 1;
-    animation-name: goright;
-    animation-duration: 3s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+    transition: all 0.4s;
+    opacity: 0;
 }
-    @keyframes goright{
-    0%{
-        left: 50%;
-    }
-    50%{
-        left: 25%;
-    }
-    100%{
-        left: 50%;
-}
+.whatwedo-content:hover .goright{
+    left: 50%;
+    transform: translateX(100%);
+    opacity: 1;
 .whatwedo-content img{
 width: 100%;
 }
